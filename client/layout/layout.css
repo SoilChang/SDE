@@ -1,21 +1,54 @@
+#layoutContainer{
+
+}
+
 #sideBarContainer{
-	position: absolute;
+	position: fixed;
+	margin-top:0px;
 	width: 200px;
+	z-index: 100
 }
 
 #centerContainer{
 	position: absolute;
-	margin-left: 200px;
-	margin-top: 50px;
-	width: 1100px;
-	height: 900px;
-	background-color: red;
+	margin-left: 100px;
+	margin-top: 0px;
+	width: 1190px;
+	height: 1500px;
+	background-color: rgba(0, 204, 255,0.4);
+	background-image: url("/images/layout/changAn.png");
+	background-repeat: no-repeat;
+	background-size:  auto 100%;
+	z-index: 1
 }
 
 #slideIn{
-	position: absolute;
-	margin-left: 1100px;
+	position: fixed;
+	margin-left: 1190px;
 	width: 0px;
-	height: 900px;
-	background-color: green;
+	height: 600px;
+	background-color: rgba(255, 204, 0,0.8);
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 100;
+}
+
+#yongNingWard{
+	position: absolute;
+	margin-top: 870px;
+	margin-left: 670px;
+	height: 55px;
+	width: 105px;
+	background-image: url("/images/yongNingWard/yongNingWard.png");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+#yongNingWard_text{
+	font-weight: bold;
+	position: absolute;
+	margin-top: 4px;
+	font-size: 20px;
+	text-align: center;
+	display: none;
 }

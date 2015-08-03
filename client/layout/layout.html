@@ -1,50 +1,64 @@
 <template name="layout">
-	<!-- header -->
-	<nav>
-	    <div class="nav-wrapper">
-	      <a href="#!" class="brand-logo">Logo</a>
-	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-	      <ul class="right hide-on-med-and-down">
-	        <li><a href="sass.html">Sass</a></li>
-	        <li><a href="badges.html">Components</a></li>
-	        <li><a href="collapsible.html">Javascript</a></li>
-	        <li><a href="mobile.html">Mobile</a></li>
-	      </ul>
-	      <ul class="side-nav" id="mobile-demo">
-	        <li><a href="sass.html">Sass</a></li>
-	        <li><a href="badges.html">Components</a></li>
-	        <li><a href="collapsible.html">Javascript</a></li>
-	        <li><a href="mobile.html">Mobile</a></li>
-	      </ul>
-	    </div>
-	</nav>
+	<div id="layoutContainer">
+		<!-- header -->
+		<nav>
+		    <div class="nav-wrapper">
+		      <a href="#!" class="brand-logo"><img src="/sde-sde.jpg" style="height:60px;"></a>
+		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		      <ul class="right hide-on-med-and-down">
+		        <li><a href="sass.html">Home</a></li>
+		        <li><a href="badges.html">See more</a></li>
+		        <li><a href="collapsible.html">Feedback</a></li>
+		        <li><a href="mobile.html">Brief History</a></li>
+		      </ul>
+		      <ul class="side-nav" id="mobile-demo">
+		        <li><a href="sass.html">Home</a></li>
+		        <li><a href="badges.html">See more</a></li>
+		        <li><a href="collapsible.html">Feedback</a></li>
+		        <li><a href="mobile.html">Brief History</a></li>
+		      </ul>
+		    </div>
+		</nav>
 
-	<!-- side bar -->
-	<div id="sideBarContainer">
-		<ul class="collapsible popout" data-collapsible="accordion">
-		   <li>
-		     <div class="collapsible-header"><i class="material-icons">filter_drama</i></div>
-		     <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-		   </li>
-		   <li>
-		     <div class="collapsible-header"><i class="material-icons">place</i></div>
-		     <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-		   </li>
-		   <li>
-		     <div class="collapsible-header"><i class="material-icons">whatshot</i></div>
-		     <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-		   </li>
-		 </ul>
-	</div>
+		<!-- side bar -->
+		<div id="sideBarContainer">
+			<ul class="collapsible popout" data-collapsible="accordion">
+			   <li>
+			     <div class="collapsible-header"><i class="material-icons">Spatial</i></div>
+			     <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+			   </li>
+			   <li>
+			     <div class="collapsible-header"><i class="material-icons">Temporal</i></div>
+			     <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+			   </li>
+			   <li>
+			     <div class="collapsible-header"><i class="material-icons">Typal</i></div>
+			     <div class="collapsible-body">
+			     	<div class="collection">
+		     	        <a href="#!" class="collection-item">Textual</a>
+		     	        <a href="#!" class="collection-item">Archealogical</a>
+		     	        <a href="#!" class="collection-item">Painting</a>
+		     	        <a href="#!" class="collection-item">Reconstruction</a>
+		     	    </div>
+			     </div>
+			   </li>
+			 </ul>
+		</div>
 
-	<!-- center -->
-	<div id="centerContainer">
-		<!-- center map -->
-		<input id="callSlideIn" type="button" value="slide in">
+		<!-- center -->
+		<div id="centerContainer">
+			<!-- center map -->
+			<div id='yongNingWard'>
+				<p id="yongNingWard_text">Yong Ning Ward</p>
+				<a id="yongNingWard_button" class="btn-floating btn-large waves-effect waves-light red" style="display:none;" href="{{pathFor 'yongNingWard'}}"><i class="material-icons">+</i></a>
+			</div>
+			
 
-		<!-- slide in showcase -->
-		<div id="slideIn">
-			<input id="slideBack" type="button" value="back">
+
+			<!-- slide in showcase -->
+			<div id="slideIn">			
+				{{>yield}}
+			</div>
 		</div>
 	</div>
 </template>		
