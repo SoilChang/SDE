@@ -3,7 +3,7 @@
 }
 
 #sideBarContainer{
-	position: fixed;
+	position: absolute;
 	margin-top:0px;
 	width: 200px;
 	z-index: 100
@@ -33,7 +33,7 @@
 	z-index: 100;
 }
 
-#yongNingWard{
+#yongNingWard_small{
 	position: absolute;
 	margin-top: 870px;
 	margin-left: 670px;
@@ -43,6 +43,7 @@
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 }
+
 
 #yongNingWard_text{
 	font-weight: bold;

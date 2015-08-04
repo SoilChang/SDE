@@ -18,4 +18,6 @@ mrt:facebook-sdk
 brentjanderson:buzz
 momentjs:moment
 houston:admin
+
+twbs:bootstrap
 materialize:materialize
