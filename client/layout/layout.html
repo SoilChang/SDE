@@ -1,7 +1,7 @@
 <template name="layout">
-	<div id="layoutContainer">
+	<div id="layoutContainer" class="col-xs-12" >
 		<!-- header -->
-		<nav style="width:1290px;">
+		<nav>
 		    <div class="nav-wrapper #a1887f brown lighten-2">
 		      <a href="#!" class="brand-logo"><img src="/sde-sde.jpg" style="height:50px;"></a>
 		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -21,7 +21,7 @@
 		</nav>
 
 		<!-- side bar -->
-		<div id="sideBarContainer">
+	<!-- 	<div id="sideBarContainer">
 			<ul class="collapsible" data-collapsible="accordion">
 			   <li>
 			     <div class="collapsible-header"><i class="material-icons">Spatial</i></div>
@@ -43,28 +43,36 @@
 			     </div>
 			   </li>
 			 </ul>
-		</div>
+		</div> -->
 
 		<!-- center -->
 		<div id="centerContainer">
 			<!-- center map -->
-			<div id='yongNingWard_small'>
-				<p id="yongNingWard_text">Yong Ning Ward</p>
-				<a id="yongNingWard_callSlide" class="yongNingWard_showables btn-floating btn-large waves-effect waves-light red" style="display:none;" href="{{pathFor 'yongNingWard'}}"><i class="material-icons">+</i></a>
-			</div>
-
-			
-
-
-			<!-- slide in showcase -->
-			<div id="slideIn">			
-				{{>yield}}
-			</div>
+			<a href="{{pathFor 'yongNingWard'}}"><div id='yongNing_patch'></div></a>
 		</div>
 
+		<!-- center left -->
+		<div id="introduction">
+			<h1 style="text-align:center; font-family: cursive">Chang'An Map</h1>
+			<ol style="font-size:20px; ">
+				<li>Linde Hall</li>
+				<li>Buddha Hall</li>
+				<a href="{{pathFor 'yongNingWard'}}">
+					<li id="yongNing_name">Yong Ning ward</li>
+				</a>
+			</ol>			
+		</div>
 
-		<!-- footer -->
-		<footer class="page-footer #6d4c41 brown darken-1" style="position:absolute; margin-top:1500px; width:1290px;">
+		<!-- slide in showcase -->
+		<div id="slideIn">			
+			{{>yield }}
+		</div>
+
+	</div>
+
+	<!-- footer -->
+	<div id="footer" class="col-xs-12">
+		<footer  class="page-footer #6d4c41 brown darken-1">
 	        <div class="container">
 	          <div class="row">
 	            <div class="col l6 s12">
@@ -90,4 +98,5 @@
 	        </div>
 	    </footer>
 	</div>
+
 </template>		

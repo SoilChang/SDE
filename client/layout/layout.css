@@ -1,55 +1,81 @@
 #layoutContainer{
+	overflow: hidden;
+	z-index: 0;
+	width: 1300px;
+	min-height: 800px;
+	background-image: url("/images/layout/background.png");
 
+	/*sytax required for sticky footer*/
+	flex: 1 0 auto;
+	
 }
 
 #sideBarContainer{
 	position: absolute;
 	margin-top:0px;
-	width: 200px;
-	z-index: 100
+	width: 100px;
+	z-index: 100;
 }
 
 #centerContainer{
 	position: absolute;
-	margin-left: 100px;
+	/*margin-left: 150px;*/
 	margin-top: 0px;
-	width: 1190px;
-	height: 1500px;
-	background-color: rgba(0, 204, 255,0.4);
+	min-height: 800px;
+	width: 600px;
 	background-image: url("/images/layout/changAn.png");
 	background-repeat: no-repeat;
-	background-size:  auto 100%;
-	z-index: 1
+	background-size:  100% auto ;
+	z-index: 1;
+
+	/*syntan required for sticky footer*/
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
+#introduction{
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 600px;
+	height: 710px;
+	width: 670px;
+	background-color: #FF9966;
+	border-radius: 5px;
+
+}
+
+#footer{
+	width: 1300px;
+	background-image: url("/images/layout/background.png");
+	margin-bottom: -20px
+}
+
+
 #slideIn{
-	position: fixed;
-	margin-left: 1190px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 600px;
 	width: 0px;
-	height: 600px;
-	background-color: rgba(255, 204, 0,0.8);
+	height: 0px;
+	background-color:#FF9933;
 	overflow-y: auto;
 	overflow-x: hidden;
 	z-index: 100;
+	border-radius: 5px;
 }
 
-#yongNingWard_small{
+
+#yongNing_patch{
 	position: absolute;
-	margin-top: 870px;
-	margin-left: 670px;
-	height: 55px;
-	width: 105px;
-	background-image: url("/images/yongNingWard/yongNingWard.png");
+	margin-top: 447px;
+	margin-left: 340px;
+	height: 27px;
+	width: 54px;
+	background-color: rgba(255, 255, 255,0);
 	background-repeat: no-repeat;
 	background-size: auto 100%;
+
 }
 
 
-#yongNingWard_text{
-	font-weight: bold;
-	position: absolute;
-	margin-top: 4px;
-	font-size: 20px;
-	text-align: center;
-	display: none;
-}
