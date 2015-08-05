@@ -5,35 +5,24 @@ Template.layout.onRendered(function(){
 
     $(".button-collapse").sideNav();
 
-    
-    // hover and unhover yong ning ward 
-   	$("#yongNingWard_small").hover(function(){
-   		$("#yongNingWard_small").css({"margin-left":"650px", "margin-top":"860px", "height":"75px", "width":"145px"});  			
-   		$("#yongNingWard_text").show();
-   	},function(){
-   		$("#yongNingWard_small").css({"margin-left":"670px", "margin-top":"870px", "height":"55px","width":"105px"},100);
-   		$("#yongNingWard_text").hide();
-   	});
+    // this is to link text and patch together on hover
+    $("#yongNing_name,#yongNing_patch").hover(function(){
+    	$('#yongNing_patch').css({"background-color":"rgba(255, 255, 255,0.5)"});
+    	$("#yongNing_name").css({"cursor":"pointer","font-size":"25px", "color":"red"});
+    },function(){
+    	$('#yongNing_patch').css({"background-color":"rgba(255, 255, 255,0)"});
+    	$("#yongNing_name").css({"cursor":"auto","font-size":"20px", "color":"black"});
+    });
 
-   	// when clicking on yong ning ward
-   	$("#yongNingWard_small").click(function(){
-		$("#yongNingWard_text").hide();
-		$(".yongNingWard_showables").show();
-		$("#yongNingWard_small").animate({marginLeft:"270px",marginTop:"670px",height:"455px",width:"905px"},100,function(){
-			// after it's blown to max size, detect mouse leave
-			$("#yongNingWard_small").mouseleave(function(){
-				$("#yongNingWard_small").css({"margin-left":"670px", "margin-top":"870px", "height":"55px","width":"105px"},100);
-				$(".yongNingWard_showables").hide();
-			})
-		});
-	});
+    // if clicked, call the slide in
+ 	$("#yongNing_name,#yongNing_patch").click(function(){
+ 		$("#slideIn").animate({"height":"710", "width":"670px"},1000);
 
+ 	});
 
 });
 
 Template.layout.events({
-	"click #yongNingWard_callSlide":function(){
-		$("#slideIn").animate({width:"1050px", marginLeft:"115px"},200);
-	},
+	
 
 });

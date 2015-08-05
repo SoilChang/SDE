@@ -1,5 +1,27 @@
 <template name="yongNingWard">
 	<div id="yongNingWard_Container">
-			<a href="{{pathFor 'empty'}}"><input id="slideBack_button" type="button" value="back"></a>
+		<div id="yongNing_picture"></div>
+
+		{{#each loadExplanation}}
+			<br><br>
+			<p style="margin-left:50px; width:600px; font-size:20px" >{{content}}</p>
+		{{/each}}
+
+		<div id="iconBox">
+			<p>
+				<i class="material-icons">theaters</i>
+				<span style="font-size:30px;">Animation</span>
+			</p>
+			<p>
+				<i class="material-icons">airplay</i>
+				<span style="font-size:30px;">Gallery</span>
+			</p>
+			<a href="{{pathFor 'empty'}}">
+				<p id="back">
+					<i class="material-icons">stop</i>
+					<span style="font-size:30px;">Back</span>
+				</p>
+			</a>
+		</div>
 	</div>
 </template>
