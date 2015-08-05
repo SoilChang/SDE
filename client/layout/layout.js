@@ -17,10 +17,6 @@ Template.layout.onRendered(function(){
 });
 
 Template.layout.events({
-	"click #yongNing_name":function(){
-		Router.go('/yongningward');
-	},
-	"click #yongNing_patch":function(){
-		Router.go('/yongningward');
-	},
+	
+
 });
