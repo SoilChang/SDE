@@ -14,12 +14,6 @@ Template.layout.onRendered(function(){
     	$("#yongNing_name").css({"cursor":"auto","font-size":"20px", "color":"black"});
     });
 
-    // if clicked, call the slide in
- 	$("#yongNing_name,#yongNing_patch").click(function(){
- 		$("#slideIn").animate({"height":"710", "width":"670px"},1000);
-
- 	});
-
 });
 
 Template.layout.events({
