@@ -1,10 +1,21 @@
 #yongNing_avi{
 	position: absolute;
-	margin-top: 10px;
-
+	margin-top: 20px;
+	margin-left: 20px;
 }
 
 #i_yongNing_avi{
 	position: absolute;
-	margin-top: 410px;
+	margin-top: 310px;
+	margin-left: 20px;
+}
+
+#itemView{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 480px;
+	height: 480px;
+	width: 300px;
+	background-color: white;
+	border-radius: 10px;
 }
