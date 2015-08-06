@@ -20,70 +20,24 @@
 		    </div>
 		</nav>
 
-		<!-- side bar -->
-	<!-- 	<div id="sideBarContainer">
-			<ul class="collapsible" data-collapsible="accordion">
-			   <li>
-			     <div class="collapsible-header"><i class="material-icons">Spatial</i></div>
-			     <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-			   </li>
-			   <li>
-			     <div class="collapsible-header"><i class="material-icons">Temporal</i></div>
-			     <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-			   </li>
-			   <li>
-			     <div class="collapsible-header"><i class="material-icons">Typal</i></div>
-			     <div class="collapsible-body">
-			     	<div class="collection">
-		     	        <a href="#!" class="collection-item">Textual</a>
-		     	        <a href="#!" class="collection-item">Archealogical</a>
-		     	        <a href="#!" class="collection-item">Painting</a>
-		     	        <a href="#!" class="collection-item">Reconstruction</a>
-		     	    </div>
-			     </div>
-			   </li>
-			 </ul>
-		</div> -->
 		<div>
 			<h3 style="text-shadow:4px 5px 0 rgba(71,255,188,1);font-weight:bold;font-style:italic;color:#21A81D;font-size:43px;text-align:center;font-family:comic sans, comic sans ms, cursive, verdana, arial, sans-serif;line-height:1;">
 			A digital reconstruction of Tang Chang'an
 			</h3>
 		</div>
-		<!-- center -->
-		<div id="centerContainer">
-			<!-- center map -->
-			<a href="{{pathFor 'yongNingWard'}}"><div id='yongNing_patch'></div></a>
+		
+		<div id="firstBoard">
+			{{> yield 'firstBoard'}}
 		</div>
 
-		<!-- center left -->
-		<div id="introduction">
-			<!-- title of the map -->
-			<h1 style="text-align:center; font-family: cursive">Chang'An Map</h1>
-
-			<!-- the list of units -->
-			<ol style="font-size:20px; ">
-				<li>Linde Hall</li>
-				<li>Buddha Hall</li>
-				<a href="{{pathFor 'yongNingWard'}}">
-					<li id="yongNing_name">Yong Ning ward</li>
-				</a>
-			</ol>			
+		<div id="leftBoard">
+			{{>yield "leftBoard"}}
 		</div>
 
-		<!-- slide in showcase -->
-		<div id="slideIn">			
-			{{>yield 'rightside'}}
+		<div id="bottomBoard">
+			
 		</div>
-
-		<div id="blackScreen">
-			<div id="video_wrapper">	
- 				{{>yield 'animationWrapper'}}
- 			</div>	
-		</div>
-
-		<div id="gallery">
-			{{> yield 'gallery'}}
-		</div>
+		
 
 	</div>
 

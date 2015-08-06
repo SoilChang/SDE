@@ -1,3 +1,10 @@
+#yongNing_animation_wrapper{
+	position: absolute;
+	width:1270px;
+	background-color: rgba(0, 0, 0, 0.7);
+	min-height: 800px;
+}
+
 #yongNing_avi{
 	position: absolute;
 	margin-top: 20px;

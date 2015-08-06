@@ -1,0 +1,58 @@
+#sideBar_container{
+	position: absolute;
+	width:200px;
+
+}
+
+#map_wrapper{
+	position: absolute;
+	margin-left: 200px;
+	margin-top: 0px;
+	min-height: 800px;
+	width: 500px;
+	background-image: url("/images/layout/changAn.png");
+	background-repeat: no-repeat;
+	background-size:  100% auto ;
+	z-index: 1;
+
+	/*syntan required for sticky footer*/
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#introduction{
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 700px;
+	height: 710px;
+	width: 570px;
+	background-color: #FF9966;
+	border-radius: 5px;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+#slideIn{
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 700px;
+	height: 0px;
+	width: 0px;
+	background-color: #FF6666;
+	border-radius: 5px;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+
+#yongNing_patch{
+	position: absolute;
+	margin-top: 400px;
+	margin-left: 322px;
+	height: 27px;
+	width: 54px;
+	background-color: rgba(255, 255, 255,0);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}

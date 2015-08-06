@@ -10,41 +10,6 @@
 	
 }
 
-#sideBarContainer{
-	position: absolute;
-	margin-top:0px;
-	width: 100px;
-	z-index: 100;
-}
-
-#centerContainer{
-	position: absolute;
-	/*margin-left: 150px;*/
-	margin-top: 0px;
-	min-height: 800px;
-	width: 600px;
-	background-image: url("/images/layout/changAn.png");
-	background-repeat: no-repeat;
-	background-size:  100% auto ;
-	z-index: 1;
-
-	/*syntan required for sticky footer*/
-	display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-#introduction{
-	position: absolute;
-	margin-top: 10px;
-	margin-left: 600px;
-	height: 710px;
-	width: 670px;
-	background-color: #FF9966;
-	border-radius: 5px;
-
-}
-
 #footer{
 	width: 1300px;
 	background-image: url("/images/layout/background.png");
@@ -52,62 +17,25 @@
 }
 
 
-#slideIn{
+#firstBoard{
 	position: absolute;
-	margin-top: 10px;
-	margin-left: 600px;
-	width: 0px;
-	height: 0px;
-	background-color:#FF9933;
-	overflow-y: auto;
-	overflow-x: hidden;
-	z-index: 100;
-	border-radius: 5px;
+	width:1270px;
+	min-height: 800px;
+	overflow-x:hidden;
 }
 
-#blackScreen{
+#leftBoard{
 	position: absolute;
-	width: 1270px;
-	height: 650px;
-	background-color: rgba(0,0,0,0.7);
-	display: none;
-	z-index: 110;
-	border-radius: 5px;
-}
-
-#gallery{
-	position: absolute;
-	width: 1270px;
-	height: 650px;
-	background-color: rgba(0,0,0,0.7);
-	display: none;
-	z-index: 110;
-	border-radius: 5px;
-}
-
-#video_wrapper{
-	position: absolute;
-	width: 800px;
-	height: 550px;
-	margin-top: 60px;
-	margin-left: 250px;
-	background-image: url("/images/layout/videoBackground.png");
-	background-repeat: no-repeat;
-	background-size:  100% auto;
+	margin-left: 1270;
+	width:0px;
+	min-height: 800px;
+	z-index: 2;
 }
 
 
-#yongNing_patch{
-	position: absolute;
-	margin-top: 447px;
-	margin-left: 340px;
-	height: 27px;
-	width: 54px;
-	background-color: rgba(255, 255, 255,0);
-	background-repeat: no-repeat;
-	background-size: auto 100%;
 
-}
+
+
 
 
 

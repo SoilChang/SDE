@@ -1,0 +1,47 @@
+<template name="map">
+	<!-- side bar -->
+	<div id="sideBar_container">
+		<ul class="collapsible" data-collapsible="accordion">
+		   <li>
+		     <div class="collapsible-header">Spatial</div>
+		     <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+		   </li>
+		   <li>
+		     <div class="collapsible-header">Temporal</div>
+		     <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+		   </li>
+		   <li>
+		     <div class="collapsible-header">Typal</div>
+		     <div class="collapsible-body">
+		     	<div class="collection">
+	     	        <a href="#!" class="collection-item">Textual</a>
+	     	        <a href="#!" class="collection-item">Archealogical</a>
+	     	        <a href="#!" class="collection-item">Painting</a>
+	     	        <a href="#!" class="collection-item">Reconstruction</a>
+	     	    </div>
+		     </div>
+		   </li>
+		 </ul>
+	</div>
+
+	<!-- center -->
+	<div id="map_wrapper">
+		<!-- center map -->
+		<a href="{{pathFor 'yongningward'}}"><div id='yongNing_patch'></div></a>
+	</div>
+
+	<div id="introduction">
+		<h1 style="padding-left:150px;">Chang'An</h1>
+		<ol style="font-size:20px;">
+			<a href="{{pathFor 'yongningward'}}">
+				<li id="yongNing_name">Yongning Ward</li>
+			</a>
+			<li>Jing’an Ward</li>
+			<li>Lanling Ward</li>
+		</ol>
+	</div>
+
+	<div id="slideIn">
+		{{ >yield 'slideIn'}}
+	</div>
+</template>
