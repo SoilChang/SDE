@@ -56,8 +56,9 @@
 	position: absolute;
 	margin-top: 10px;
 	margin-left: 600px;
-	width: 0px;
-	height: 0px;
+	width: 670px;
+	height: 710px;
+	display: none;
 	background-color:#FF9933;
 	overflow-y: auto;
 	overflow-x: hidden;
