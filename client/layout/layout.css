@@ -65,6 +65,27 @@
 	border-radius: 5px;
 }
 
+#blackScreen{
+	position: absolute;
+	width: 1270px;
+	height: 650px;
+	background-color: rgba(0,0,0,0.7);
+	display: none;
+	z-index: 110;
+	border-radius: 5px;
+}
+
+#video_wrapper{
+	position: absolute;
+	width: 800px;
+	height: 550px;
+	margin-top: 60px;
+	margin-left: 250px;
+	background-image: url("/images/layout/videoBackground.png");
+	background-repeat: no-repeat;
+	background-size:  100% auto;
+}
+
 
 #yongNing_patch{
 	position: absolute;
@@ -77,5 +98,7 @@
 	background-size: auto 100%;
 
 }
+
+
 
 

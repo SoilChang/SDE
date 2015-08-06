@@ -51,8 +51,6 @@
 		</div>
 		<!-- center -->
 		<div id="centerContainer">
-			<!-- title -->
-			
 			<!-- center map -->
 			<a href="{{pathFor 'yongNingWard'}}"><div id='yongNing_patch'></div></a>
 		</div>
@@ -74,11 +72,13 @@
 
 		<!-- slide in showcase -->
 		<div id="slideIn">			
-			{{>yield }}
+			{{>yield 'rightside'}}
 		</div>
 
-		<div id="animation">
-			
+		<div id="blackScreen">
+			<div id="video_wrapper">	
+ 				{{>yield 'animationWrapper'}}
+ 			</div>	
 		</div>
 
 	</div>
