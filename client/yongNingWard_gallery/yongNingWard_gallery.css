@@ -1,0 +1,16 @@
+#image_wrapper_1{
+	display: inline-block;
+	position: relative;
+	padding-left: 100px;
+	width: 1200px;
+	min-height: 800px;
+}
+
+
+.picture_small{
+	padding-top:50px;
+	padding-left: 80px;
+	display: inline-block;
+	position: relative;
+	width:250px; 
+}

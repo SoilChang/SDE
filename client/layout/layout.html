@@ -1,5 +1,5 @@
 <template name="layout">
-	<div id="layoutContainer" class="col-xs-12" >
+	<div id="layoutContainer" class="container" >
 		<!-- header -->
 		<nav>
 		    <div class="nav-wrapper #a1887f brown lighten-2">
@@ -20,6 +20,7 @@
 		    </div>
 		</nav>
 
+
 		<div>
 			<h3 style="text-shadow:4px 5px 0 rgba(71,255,188,1);font-weight:bold;font-style:italic;color:#21A81D;font-size:43px;text-align:center;font-family:comic sans, comic sans ms, cursive, verdana, arial, sans-serif;line-height:1;">
 			A digital reconstruction of Tang Chang'an
@@ -30,19 +31,19 @@
 			{{> yield 'firstBoard'}}
 		</div>
 
-		<div id="leftBoard">
-			{{>yield "leftBoard"}}
+		<div id="rightBoard">
+			{{>yield "rightBoard"}}
 		</div>
 
-		<div id="bottomBoard">
-			
+		<div id="leftBoard">
+	
 		</div>
 		
 
 	</div>
 
 	<!-- footer -->
-	<div id="footer" class="col-xs-12">
+	<div id="footer" class="container">
 		<footer  class="page-footer #6d4c41 brown darken-1">
 	        <div class="container">
 	          <div class="row">

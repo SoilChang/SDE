@@ -7,31 +7,34 @@ Template.yongNing_animation.onRendered(function(){
             width: "450", 
             videoId: "iBX62jH732o", 
             events: {
-                onReady: function (event) {
-                    // Play video when player ready.
-                    event.target.playVideo();
-                }
-                
+                'onReady': onPlayerReady,      
             }
         });
-
         var player2 = new YT.Player("i_yongNing_avi", {
             height: "200", 
             width: "300", 
             videoId: "5It4g_xQSF0", 
             events: {
-                onReady: function (event) {
-                    // Play video when player ready.
-                    event.target.playVideo();
-                }
+                'onReady': onPlayerReady,      
             }
         });
         
     };
     YT.load();
+
+    // play video
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    };
+
+
+
+
 });
 
 Template.yongNing_animation.helpers({
- 
+
 });
+
+
 

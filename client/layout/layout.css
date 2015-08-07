@@ -1,12 +1,14 @@
 #layoutContainer{
+	position: relative;
 	overflow: hidden;
-	z-index: 0;
 	width: 1300px;
-	min-height: 800px;
+	min-height: 900px;
 	background-image: url("/images/layout/background.png");
+	background-repeat: repeat;
 
-	/*sytax required for sticky footer*/
-	flex: 1 0 auto;
+/*	display: flex;
+    min-height: 100vh;
+    flex-direction: column;*/
 	
 }
 
@@ -18,19 +20,24 @@
 
 
 #firstBoard{
-	position: absolute;
-	width:1270px;
+	position: relative;
+	display: inline-block;
+	width:1260px;
 	min-height: 800px;
-	overflow-x:hidden;
+	overflow:hidden; 
 }
 
-#leftBoard{
-	position: absolute;
-	margin-left: 1270;
+#rightBoard{
+	position: relative;	
+	display: inline-block;
+	display: none;
+	margin-left: 1300;
 	width:0px;
 	min-height: 800px;
-	z-index: 2;
+	overflow:hidden; 
+	background-color: rgba(0, 0, 0, 0.3);
 }
+
 
 
 

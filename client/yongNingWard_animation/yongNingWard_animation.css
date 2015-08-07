@@ -1,28 +1,27 @@
-#yongNing_animation_wrapper{
+#yongning_video{
 	position: absolute;
-	width:1270px;
-	background-color: rgba(0, 0, 0, 0.7);
-	min-height: 800px;
+	margin-top:80px;
+	margin-left: 250px;
+	width: 450px;
 }
-
 #yongNing_avi{
-	position: absolute;
-	margin-top: 20px;
-	margin-left: 20px;
+
+	
+
 }
 
 #i_yongNing_avi{
-	position: absolute;
-	margin-top: 310px;
-	margin-left: 20px;
+
+
+
 }
 
 #itemView{
 	position: absolute;
-	margin-top: 20px;
-	margin-left: 480px;
-	height: 480px;
-	width: 300px;
+	margin-top: 80px;
+	margin-left: 700px;
+	height: 500px;
+	width: 400px;
 	background-color: white;
 	border-radius: 10px;
 }

@@ -4,23 +4,42 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
+#default package
 meteor-platform
+
+ # jquery
 jquery
+
+ # router
 iron:router
-accounts-ui
-underscore
-sacha:spin
+okgrow:iron-router-autoscroll
 manuelschoebel:wait-on-lib
+
+ # account related
+accounts-ui
 accounts-password
-email
-audit-argument-checks
 mrt:facebook-sdk
-
-brentjanderson:buzz
-adrianliaw:youtube-iframe-api
-
-momentjs:moment
 houston:admin
 
-twbs:bootstrap
+ # utility
+underscore
+sacha:spin
+email
+
+
+ # check argument input in methods
+audit-argument-checks
+
+
+ # handle sound
+brentjanderson:buzz
+
+ # handle youtube video
+adrianliaw:youtube-iframe-api
+
+ # format time
+momentjs:moment
+
+
+ # design Frame work
 materialize:materialize
