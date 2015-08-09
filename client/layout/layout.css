@@ -2,7 +2,8 @@
 	position: relative;
 	overflow: hidden;
 	width: 1300px;
-	min-height: 900px;
+	height: auto;
+	min-height: 100%;
 	background-image: url("/images/layout/background.png");
 	background-repeat: repeat;
 
@@ -13,9 +14,11 @@
 }
 
 #footer{
+	position: relative;
+	margin-top: -20px;
 	width: 1300px;
 	background-image: url("/images/layout/background.png");
-	margin-bottom: -20px
+	
 }
 
 
@@ -24,6 +27,7 @@
 	display: inline-block;
 	width:1260px;
 	min-height: 800px;
+
 	overflow:hidden; 
 }
 
