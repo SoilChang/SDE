@@ -1,61 +1,48 @@
 <template name="layout">
 		<!-- header -->
-		<nav>
-		    <div class="nav-wrapper #a1887f brown lighten-2">
-		      <a href="{{pathFor 'map'}}" class="brand-logo"><img src="/sde-sde.jpg" style="height:50px;"></a>
-		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-		      <ul class="right hide-on-med-and-down">
-		        <li><a href="{{pathFor 'map'}}"><span style="font-size:20px;">Home</span></a></li>
-		        <li><a href="#"><span style="font-size:20px;">See more</span></a></li>
-		        <li><a href="#"><span style="font-size:20px;">Feedback</span></a></li>
-		        <li><a href="#"><span style="font-size:20px;">Brief History</span></a></li>
-		      </ul>
-		      <ul class="side-nav" id="mobile-demo">
-		        <li><a href="{{pathFor 'map'}}">Home</a></li>
-		        <li><a href="#">See more</a></li>
-		        <li><a href="#">Feedback</a></li>
-		        <li><a href="#">Brief History</a></li>
-		      </ul>
-		    </div>
-		</nav>
+		{{> topnav}}
 
-	<div id="layout" class="container">
-		
+	<div id="layout">
+		<!-- A digital reconstruction of Tang Chang'an -->
+		<div id="projectTitle">
+			<h3 style="text-shadow:4px 5px 0 rgba(71,255,188,1);font-weight:bold;font-style:italic;color:#21A81D;font-size:43px;text-align:center;font-family:comic sans, comic sans ms, cursive, verdana, arial, sans-serif;line-height:1;">
+			A digital reconstruction of Tang Chang'an
+			</h3>
+		</div>        
 
 		<!-- body -->
-		<div id="body">
+		<div id="body" class="container">
 			{{>yield "body"}}
 		</div>
 
-	</div>
-
-	<!-- footer -->
-	<div id="footer" >
-		<footer  class="page-footer #6d4c41 brown darken-1">
+		<!-- footer -->
+		<footer class="page-footer">
+	      <div class="container">
+	        <div class="row">
+	          <div class="col l6 s12">
+	            <h5 class="white-text">Footer Content</h5>
+	            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+	          </div>
+	          <div class="col l4 offset-l2 s12">
+	            <h5 class="white-text">Links</h5>
+	            <ul>
+	              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+	              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+	              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+	              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+	            </ul>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="footer-copyright">
 	        <div class="container">
-	          <div class="row">
-	            <div class="col l6 s12">
-	              <h5 class="white-text">Footer Content</h5>
-	              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-	            </div>
-	            <div class="col l4 offset-l2 s12">
-	              <h5 class="white-text">Links</h5>
-	              <ul>
-	                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-	                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-	                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-	                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-	              </ul>
-	            </div>
-	          </div>
+	        © 2014 Copyright Text
+	        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
 	        </div>
-	        <div class="footer-copyright">
-	          <div class="container">
-	          © 2014 Copyright Text
-	          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-	          </div>
-	        </div>
+	      </div>
 	    </footer>
 	</div>
+
+	
 
 </template>
