@@ -1,0 +1,35 @@
+<template name="yongningward">
+	<a href="{{pathFor 'home'}}">
+		<i class="material-icons" style="position:absolute; margin-left:480px;">clear</i>
+	</a>
+	<div class="container">
+	{{#each  loadData}}
+		<img src="{{picture}}">
+		<h3>{{title}}</h3>
+		<br>
+		<p style="font-size:20px;">{{content}}</p>
+	{{/each}}
+	</div>
+
+	<div style="text-align:left; margin-left:200px;">
+		<a href="#">
+			<p>
+				<i class="material-icons">theaters</i>
+				<span style="font-size:20px;">Animation</span>
+			</p>
+		</a>	
+		<a href="#">
+			<p>
+				<i class="material-icons">airplay</i>
+				<span style="font-size:20px;">Gallery</span>
+			</p>
+		</a>
+		<a href="{{pathFor 'home'}}">
+			<p>
+				<i class="material-icons">clear</i>
+				<span style="font-size:20px;">Back</span>
+			</p>
+		</a>		
+		
+	</div>
+</template>

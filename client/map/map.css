@@ -22,3 +22,27 @@
 	background-color: #FFA319;
 	border-radius: 10px;
 }
+
+#slideIn{
+	position: relative;
+
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background-color: #FF9966;
+}
+
+/*now introduction comes below when i shrink the page. the footer isn't sticky 
+when i shrink the window size.*/
+
+
+#yongning_patch{
+	position: absolute;
+	background-color: white;
+	opacity: 0.0;
+	width: 42px;
+	height: 21px;
+	margin-left: 253px;
+	margin-top: 314px;
+
+}

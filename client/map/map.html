@@ -4,37 +4,36 @@
 	<!-- map -->
 	<div id="map_wrapper">
 		<!-- center map -->
-		<a href="#"><div id='yongNing_patch'></div></a>
+		<a href="#slideIn"><div id='yongning_patch'></div></a>
 	</div>
 
 	<!-- introduction -->
-	<div id="introduction">
-		<h1 style="text-align:center">Chang'An</h1>
-		<ol style="font-size:20px; text-align:left;">
-			<a href="#">
-				<li id="yongNing_name">Yongning Ward</li>
-			</a>
-			<li>Jing’an Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-			<li>Lanling Ward</li>
-		</ol>
-	</div>
+		<div id="introduction">
+			<h1 style="text-align:center">Chang'An</h1>
+			<ul style="font-size:20px; text-align:left; padding-left:10px;" class="section table-of-contents">
+				
+				<a href="#slideIn">
+					<li id="yongning_name">Yongning Ward</li>	
+				</a>
+				<li>Jing’an Ward</li>
+				<li>Lanling Ward</li>
+				<li>Lanling Ward</li>
+				<li>Lanling Ward</li>
+				<li>Lanling Ward</li>
+				<li>Lanling Ward</li>
+				<li>Lanling Ward</li>
+				<li>Lanling Ward</li>
+				<li>Lanling Ward</li>
+				<li>Lanling Ward</li>
+				<li>Lanling Ward</li>
+				<li>Lanling Ward</li>
+			</ul>
+		</div>
+
+
+		<div id="slideIn" class="section scrollspy">
+			{{>yield "slideIn"}}
+		</div>
+
+
 </template>

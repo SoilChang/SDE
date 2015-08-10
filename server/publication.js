@@ -1,3 +1,3 @@
-Meteor.publish("yongNing",function(){
-	return YongNing.find();
+Meteor.publish("yongning",function(){
+	return Yongning.find();
 })
