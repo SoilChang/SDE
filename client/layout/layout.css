@@ -1,47 +1,10 @@
-#layoutContainer{
-	position: relative;
-	overflow: hidden;
-	width: 1300px;
-	/*height: auto;*/
+#layout{
+	height: auto;
 	min-height: 100%;
 	background-image: url("/images/layout/background.png");
-	background-repeat: repeat;	
+
 }
 
-#footer{
-	position: relative;
-	margin-top: -20px;
-	width: 1300px;
-	background-image: url("/images/layout/background.png");
-	
+#body{
+	min-height: 100%;
 }
-
-
-#firstBoard{
-	position: relative;
-	display: inline-block;
-	width:1260px;
-	min-height: 800px;
-	overflow:hidden; 
-}
-
-#rightBoard{
-	position: relative;	
-	display: inline-block;
-	display: none;
-	margin-left: 1300;
-	width:0px;
-	min-height: 800px;
-	overflow:hidden; 
-	background-color: rgba(0, 0, 0, 0.3);
-}
-
-
-
-
-
-
-
-
-
-
